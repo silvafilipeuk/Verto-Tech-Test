@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Verto Tech Test Project</title>
+    <environment include="Development">
+		<link rel="stylesheet" href="~/css/foundation.css" />
+        <link rel="stylesheet" href="~/css/app.css" />
+    </environment>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+    <environment include="Development">
+        <script src="~/js/vendor/foundation.js"></script>
+        <script src="~/js/vendor/jquery.js"></script>
+        <script src="~/js/vendor/what-input.js"></script>
+    </environment>
+</body>
+</html>
