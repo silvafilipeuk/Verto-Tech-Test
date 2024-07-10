@@ -3,10 +3,6 @@
     height: 100px;
 }
 
-.body {
-    background-color: red;
-}
-
 .footer {
     background-color: #e6e7e8;
 }
@@ -26,11 +22,46 @@
     color: #515150;
 }
 
-.button-green {
+.page-buttons {
     background-color: #008542;
     width: 50%;
 }
 
+.special-offers {
+    padding-top: 1rem;
+}
+
+.offers-button {
+    background-color: #008542;
+}
+
 .title {
     color: #515150;
+}
+
+.offers-container {
+    padding: 1rem;
+    background-color: #e6e7e8;
+}
+
+.offer {
+    padding: 1rem;
+}
+
+.offer-text {
+    background-color: #FFFFFF;
+    padding: 1rem;
+}
+
+.offer-description {
+    background-color: #FFFFFF;
+    margin: 0;
+    text-align: center;
+}
+
+.offer-promotion {
+    background-color: #FFFFFF;
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
 }
