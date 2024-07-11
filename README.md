@@ -10,11 +10,15 @@ git clone https://github.com/silvafilipeuk/Verto-Tech-Test.git
 
 Open the project in the Microsoft Visual Studio code 2022
 
-Update appsettings.json with your SQL Server address, as per line below:
+Create a Database in your SQL SERVER.
 
-"DefaultConnection": "Server=YOUR_SERVER_HERE;Database=VertoPagesDb;Trusted_connection=true;TrustServerCertificate=true;"
+Update appsettings.json with your SQL Server address, and Database name as per line below:
+
+"DefaultConnection": "Server=YOUR_SERVER_HERE;Database=YOUR_DATABASE_NAME_HERE;Trusted_connection=true;TrustServerCertificate=true;"
 
 On the Package Manager Console:
+
+Add-Migration Seeding_database
 
 update-database (will create and seed the database)
 
