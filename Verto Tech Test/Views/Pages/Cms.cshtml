@@ -1,0 +1,36 @@
+﻿@model List<Verto_Tech_Test.Models.Domain.Page>
+@{
+    Layout = "_Layout";
+}
+
+<div class="grid-container">
+    <h2>Very Simple CMS</h2>
+    <table class="hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Image Url</th>
+            <th>Edit</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Title</td>
+                    <td>@item.ImageUrl</td>
+                    <td>@item.Description</td>
+                    <td><a asp-action="ViewPage" asp-controller="Pages" asp-route-id="@item.Id">Edit</a></td>
+                </tr>
+            }
+        </tbody>
+</table>
+
+    <a class="button offers-button" asp-action="Index" asp-controller="Home">View Home</a>
+
+</div>
+
+

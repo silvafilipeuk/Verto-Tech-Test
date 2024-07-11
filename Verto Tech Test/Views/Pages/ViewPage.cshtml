@@ -1,0 +1,39 @@
+﻿@model Verto_Tech_Test.Models.UpdatePageViewModel
+
+@{
+    Layout = "_Layout";
+}
+
+
+<form method="post" action="ViewPage">
+  <div class="grid-container">
+        <h2>Edit Page</h2>
+    <div class="grid-x grid-padding-x">
+            <div class="cell">
+                <label>Id
+                    <input type="text" placeholder="" asp-for="Id" readonly>
+                </label>
+            </div>
+            <div class="cell">
+                <label>
+                    Title
+                    <input type="text" placeholder="" asp-for="Title">
+                </label>
+            </div>
+            <div class="cell">
+                <label>
+                    Image Url
+                    <input type="text" placeholder="" asp-for="ImageUrl">
+                </label>
+            <div class="cell">
+                <label>
+                    Description
+                    <input type="text" placeholder="" asp-for="Description">
+                </label>
+            </div>
+                <div class="cell">
+                    <button class="submit button">Save</button>
+                </div>
+            </div>
+  </div>
+</form>
