@@ -12,23 +12,69 @@
         <link rel="stylesheet" type="text/css" href="~/css/slick/slick-theme.css" />
     </environment>
 </head>
-<body>
-    <div>
-        <div class="cell large-2 header">
+<body>    
+   <div>
+        <div class="cell header-large">
             <div class="grid-container">
                 <div class="grid-y grid-margin-x clearfix">
                     <div class="cell float-left logo">
                         <h3>opticron</h3>
-                    </div>
-                    <div class="grid-x large-12">
-                        <ul class="menu align-left large-9 nav-menu">
+                    </div>                    
+                    <div class="grid-x large-12" id="main-nav" clearfix>                       
+                        <ul class="horizontal menu large-9 nav-menu" >
                             <li><a href="#">Our Products</a></li>
                             <li><a href="#">Where to Buy</a></li>
                             <li><a href="#">News and Reviews</a></li>
                             <li><a href="#">Help & Support</a></li>
                             <li><a asp-action="Cms" asp-controller="Pages">My Opticron <strong>CMS</strong></a></li>
                         </ul>
-                        <form class="float-right large-3">
+                        <form class="large-3 medium-4">
+                            <div class="input-group">
+                                <input class="input-group-field" type="text" placeholder="My Opticron...">
+                                <div class="input-group-button">
+                                    <button class="button search search-button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none">
+                                            <path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell header-mobile">
+            <div class="grid-container">
+                <div class="grid-y">
+                    <div class="grid-x grid-margin-x clearfix">
+                        <div class="cell logo medium-6 small-6">
+                            <h3 class="floar-left">opticron</h3>
+                        </div>
+                        <div class="cell medium-6 small-6">
+                            <ul class="vertical menu float-right" data-responsive-menu="drilldown medium-dropdown">
+                                <li>
+                                    <div class="title-bar" data-responsive-toggle="mobile-menu" data-hide-for="large">
+                                        <div class="title-bar-title">Menu</div>
+                                        <button class="menu-icon" type="button" data-toggle></button>
+                                    </div>
+                                    <div class="top-bar" id="mobile-menu">
+                                        <div class="top-bar-right">
+                                            <ul class="dropdown vertical menu mob-menu" data-dropdown-menu>
+                                                <li><a href="#">Our Products</a></li>
+                                                <li><a href="#">Where to Buy</a></li>
+                                                <li><a href="#">News and Reviews</a></li>
+                                                <li><a href="#">Help & Support</a></li>
+                                                <li><a asp-action="Cms" asp-controller="Pages">My Opticron <strong>CMS</strong></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cell small-6 medium-6 clearfix">
+                        <form class="mobile-search float-right">
                             <div class="input-group">
                                 <input class="input-group-field" type="text" placeholder="My Opticron...">
                                 <div class="input-group-button">
@@ -51,25 +97,18 @@
         <script src="~/js/vendor/jquery.js"></script>
         <script src="~/js/vendor/what-input.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.8.1/js/foundation.min.js" integrity="sha512-HugKDgJVjWdi/RfSbpjwOPqBhO2AQ6TuETbq7eGGutNulCWxZuERGwK9RutFQ/rbogsqpmfOtqJpFy2Y4AeJcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     </environment>
     <script type="text/javascript">
+        $(document).foundation();
         $(document).ready(function () {
             $('.categories-slider').slick({
                 dots: false,
                 infinite: true,
                 speed: 300,
-                slidesToShow: 4,
+                slidesToShow: 1,
                 slidesToScroll: 1,
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
-                        }
-                    },
-                ]
               });
             });
     </script>
