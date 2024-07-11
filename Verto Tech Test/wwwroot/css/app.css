@@ -67,6 +67,23 @@
     font-weight: 700;
 }
 
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.product-categories {
+    padding: 3rem 0 2rem 0;
+}
+
+.product-categories-title {
+    padding: 1rem;
+    background-color: #FFFFFF;
+    margin: 0;
+    text-align: center;
+    color: #929497;
+}
+
 .social-media li {
     font-size: 26px;
     margin: 1rem 0 1rem 0;
