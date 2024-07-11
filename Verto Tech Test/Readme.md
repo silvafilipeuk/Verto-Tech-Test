@@ -20,7 +20,7 @@ To reproduce the project locally:
 
 - On the Package Manager Console:
 
-- Add-Migrations Seeding_database
+- Add-Migration Seeding_database
 
 - update-database (will create and seed the database) 
 
